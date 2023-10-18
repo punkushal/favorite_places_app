@@ -8,6 +8,7 @@ class ImageInput extends StatefulWidget {
 }
 
 class _ImageInputState extends State<ImageInput> {
+  void _takePicture() {}
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,7 +21,7 @@ class _ImageInputState extends State<ImageInput> {
       //this alignment centers child element horizontally as well as vertically
       alignment: Alignment.center,
       child: TextButton.icon(
-        onPressed: () {},
+        onPressed: _takePicture,
         icon: const Icon(Icons.camera),
         label: Text('Take Picture'),
       ),
